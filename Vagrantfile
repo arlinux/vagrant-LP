@@ -16,7 +16,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # doesn't already exist on the user's system.
   # config.vm.box_url = "http://domain.com/path/to/above.box"
   
-  config.vm.box_url = "http://192.168.1.2/precise-server-cloudimg-i386-vagrant-disk1.box" 
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box"
+
+  #config.vm.box_url = "http://192.168.1.2/precise-server-cloudimg-i386-vagrant-disk1.box" # If internet is slow!!!
 
   config.vm.hostname = "fg-web01.example.com" 
   # Create a forwarded port mapping which allows access to a specific port
